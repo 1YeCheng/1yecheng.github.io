@@ -173,9 +173,8 @@
 }
 .radio-skin,
 .radio-skin--love,
-.radio-skin--friend,
+.radio-skin--daily,
 .radio-skin--job,
-.radio-skin--family,
 .radio-skin--faith {
   height: 100%;
   width: 2px;
@@ -185,9 +184,8 @@
 }
 .radio-skin::after,
 .radio-skin--love::after,
-.radio-skin--friend::after,
+.radio-skin--daily::after,
 .radio-skin--job::after,
-.radio-skin--family::after,
 .radio-skin--faith::after {
   transition: all 0.4s ease;
   display: block;
@@ -226,22 +224,22 @@
     font-weight: bold;
   }
   */
-.radio-skin--friend::after {
+.radio-skin--daily::after {
   border-color: #207f4c;
 }
-#radio-friend:checked+.radio-skin--friend {
+#radio-daily:checked+.radio-skin--daily {
   background-color: #207f4c;
 }
-#radio-friend:checked+.radio-skin--friend::after {
+#radio-daily:checked+.radio-skin--daily::after {
   background-color: #207f4c;
   top: -2px;
 }
-.timeline-item-friend .line-anchor::after,
-.timeline-item-friend--hidden .line-anchor::after {
+.timeline-item-daily .line-anchor::after,
+.timeline-item-daily--hidden .line-anchor::after {
   background-color: #207f4c;
 }
-.timeline-item-friend .line-date-tag,
-.timeline-item-friend--hidden .line-date-tag {
+.timeline-item-daily .line-date-tag,
+.timeline-item-daily--hidden .line-date-tag {
   background-color: #207f4c;
 }
 /*
@@ -266,29 +264,6 @@
 .timeline-item-job .line-date-tag,
 .timeline-item-job--hidden .line-date-tag {
   background-color: #000;
-}
-/*
-  .timeline-item-app, .timeline-item-event {
-    font-weight: bold;
-  }
-  */
-.radio-skin--family::after {
-  border-color: #ffcbb3;
-}
-#radio-family:checked+.radio-skin--family {
-  background-color: #ffcbb3;
-}
-#radio-family:checked+.radio-skin--family::after {
-  background-color: #ffcbb3;
-  top: -2px;
-}
-.timeline-item-family .line-anchor::after,
-.timeline-item-family--hidden .line-anchor::after {
-  background-color: #ffcbb3;
-}
-.timeline-item-family .line-date-tag,
-.timeline-item-family--hidden .line-date-tag {
-  background-color: #ffcbb3;
 }
 /*
   .timeline-item-app, .timeline-item-event {
