@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+  <head>
+    <meta charset="utf8" />
+    <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+    <title>
+      
+        HNU-OS-lab3 | 爱你
+      
+    </title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    
+      <link rel="apple-touch-icon"
+            sizes="180x180"
+            href="/images/logo.svg" />
+    
+    
+      <link rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="/images/logo.svg" />
+    
+    
+      <link rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="/images/logo.svg" />
+    
+    
+      <link rel="mask-icon"
+            href="/images/logo.svg"
+            color="" />
+    
+    
+    
+      
+  <style>
+    @font-face {
+        font-family:sourceHanSerif;
+        src: url(/font/normal.ttf);
+        font-weight: normal;
+    }
+  </style>
+
+  <style>
+    @font-face {
+        font-family:sourceHanSerif;
+        src: url(/font/bold.ttf);
+        font-weight: bold;
+    }
+  </style>
+
+
+    
+    <link rel="stylesheet"
+          type="text/css"
+          href='/css/layout.css' />
+    
+    
+  <link rel="stylesheet" type="text/css" href="/css/post.css"/>
+  
+
+  <!-- hexo injector head_end start --><script> let HEXO_MMEDIA_DATA = { js: [], css: [], aplayerData: [], metingData: [], artPlayerData: [], dplayerData: []}; </script><!-- hexo injector head_end end --><meta name="generator" content="Hexo 7.3.0"></head>
+  <body>
+    
+      <div id="search-mask" style="display:none">
+  <div class="search-main" id="search-main">
+    <div class="search__head">
+      <div class="search-form">
+        <svg t="1706347533072"
+             class="icon"
+             viewBox="0 0 1024 1024"
+             version="1.1"
+             xmlns="http://www.w3.org/2000/svg"
+             p-id="7828"
+             width="20"
+             height="20">
+          <path d="M685.6 660.336l155.152 155.168a16 16 0 0 1 0 22.624l-11.312 11.328a16 16 0 0 1-22.624 0l-158.528-158.544a289.792 289.792 0 0 1-165.152 51.36C322.336 742.256 192 611.904 192 451.12 192 290.336 322.336 160 483.136 160c160.784 0 291.12 130.336 291.12 291.136 0 82.112-33.984 156.272-88.672 209.2z m-202.464 33.92c134.272 0 243.12-108.848 243.12-243.12C726.256 316.848 617.408 208 483.136 208 348.848 208 240 316.848 240 451.136c0 134.272 108.848 243.12 243.136 243.12z" fill="#000000" p-id="7829">
+          </path>
+        </svg>
+        <input id="search-input" placeholder="搜索文章">
+        <svg t="1706361500528"
+             id="search-clear"
+             class="icon"
+             viewBox="0 0 1024 1024"
+             version="1.1"
+             xmlns="http://www.w3.org/2000/svg"
+             p-id="4351"
+             width="20"
+             height="20">
+          <path d="M512 562.688l-264.2944 264.2944-50.688-50.688L461.312 512 197.0176 247.7056l50.688-50.688L512 461.312l264.2944-264.2944 50.688 50.688L562.688 512l264.2944 264.2944-50.688 50.688L512 562.688z" fill="#00" p-id="4352">
+          </path>
+        </svg>
+      </div>
+    </div>
+    <div class="search__body" id="search-result"></div>
+    <div class="search__foot"></div>
+  </div>
+</div>
+
+    
+    
+    <div class=head>
+      <div class="nav">
+        <a href='/' class="nav-logo">
+          <img alt="logo" height="60px" width="60px" src="/images/logo.svg" />
+        </a>
+        <input id="navBtn" type="checkbox" />
+        <div class="nav-right">
+          
+            <div class="search-outer">
+  <div class="search" id="search-btn">
+    <svg t="1706347533072"
+         class="icon"
+         viewBox="0 0 1024 1024"
+         version="1.1"
+         xmlns="http://www.w3.org/2000/svg"
+         p-id="7828"
+         width="20"
+         height="20">
+      <path d="M685.6 660.336l155.152 155.168a16 16 0 0 1 0 22.624l-11.312 11.328a16 16 0 0 1-22.624 0l-158.528-158.544a289.792 289.792 0 0 1-165.152 51.36C322.336 742.256 192 611.904 192 451.12 192 290.336 322.336 160 483.136 160c160.784 0 291.12 130.336 291.12 291.136 0 82.112-33.984 156.272-88.672 209.2z m-202.464 33.92c134.272 0 243.12-108.848 243.12-243.12C726.256 316.848 617.408 208 483.136 208 348.848 208 240 316.848 240 451.136c0 134.272 108.848 243.12 243.136 243.12z" fill="#000000" p-id="7829">
+      </path>
+    </svg>
+    <span>搜索</span>
+    <span class="search-shortcut-key">Ctrl K</span>
+  </div>
+</div>
+
+          
+          <div class="nav-menu">
+            
+              
+                <a class="nav-menu-item" href="/hnu">HNU</a>
+              
+                <a class="nav-menu-item" href="/life">lifeee</a>
+              
+                <a class="nav-menu-item" href="/fractionlet">MOOD</a>
+              
+                <a class="nav-menu-item" href="/story">STORY</a>
+              
+            
+            
+          </div>
+        </div>
+        <label class="nav-btn" for="navBtn"></label>
+      </div>
+    </div>
+    <div class="body">
+      
+  <article class="post-content">
+    <div class="post-inner">
+      <div class="post-content__head">
+        <div class="post-title">HNU-OS-lab3</div>
+        <div class="post-info">
+          
+  <a href="/tags/%EF%BF%BD%CE%B3%EF%BF%BD/" class="post-tag">#�γ�</a>
+
+
+          <span class="post-date">2025-05-17</span>
+        </div>
+      </div>
+      
+      <div class="post-content__body">
+        
+          <div class="post-gallery">
+            
+          </div>
+        
+        <h1 id="һʵ">һ��ʵ������</h1>
+<p>�豸��</p>
+<h1 id="ʵŀ">����ʵ��Ŀ��</h1>
+<p>����?<a
+target="_blank" rel="noopener" href="https://github.com/devicetree-org/devicetree-specification/releases/download/v0.4-rc1/devicetree-specification-v0.4-rc1.pdf">�豸���淶</a>?ѡ������Ϥ�����Ա�д�������virt.dtb�ļ�</p>
+<h1 id="ʵ">����ʵ������</h1>
+<h2 id="section">����</h2>
+<p>�豸�������ڽ��ARM��Ƕ��ʽϵͳ�����豸����׷����ӵ��µ���ƽ̨��صĴ����ں˴��뱻�����ظ������⡣ͨ���豸��������ϵͳӲ���������ԣ�Ȼ��ͨ��bootLoader���䴫�ݸ�kernel���Ա�kernel�����нϴ������ԡ�����ͼ��ʾ�豸�������ӡ�
+[[Pasted image 20250510152342.png]]</p>
+<blockquote>
+<p>[����˵��] ���ڵ㣨/�������ڵ��������豸������㣬���е������ڵ㶼�������ӽڵ㡣
+/cpus
+�ڵ㣺����ڵ�������ϵͳ�е�CPU��Դ��?<strong>?address-cells=&lt;1&gt;?</strong>?
+��
+?<strong>?size-cells=&lt;0&gt;?</strong>?�����������Զ����˵�ַ�ʹ�С��Ϣ�ı��뷽ʽ��<strong>?cpu@0?</strong>?
+��
+?<strong>?cpu@1?</strong>?���������ӽڵ�ֱ����ϵͳ�е�����CPU���ġ�<strong>device_type=“cpu”?</strong>?����ʶ����һ��CPU�豸��?<strong>?reg=&lt;0&gt;?</strong>?
+�� ?<strong>?reg=&lt;1&gt;?</strong>?���ֱ��ʾ������CPU���ĵĵ�ַ��š�
+?<strong>?timebase-frequency=&lt;825000000&gt;?</strong>? ��
+?<strong>?clock-frequency=&lt;825000000&gt;?</strong>?���ֱ��ʾʱ���׼Ƶ�ʺ�ʱ��Ƶ�ʣ���λΪHz��
+/memory@0
+�ڵ㣺����ڵ�������ϵͳ���ڴ���Դ��<strong>?device_type=“memory”?</strong>?����ʶ����һ���ڴ��豸��
+?<strong>?reg=&lt;0
+0x20000000&gt;?</strong>?����ʾ�ڴ����ʼ������ַΪ0����СΪ0x20000000�ֽڣ���512MB����
+/uart@fe001000
+�ڵ㣺����ڵ�������һ��UART��ͨ���첽�շ����������豸��?<strong>?compatible=“ns16550”?</strong>?����ʾ���豸����ns16550������
+?<strong>?reg=&lt;0xfe001000
+0x100&gt;?</strong>?����ʾ�豸��������ַ��Χ��0xfe001000��ʼ������Ϊ0x100�ֽڡ�
+/chosen
+�ڵ㣺����ڵ�ͨ������ָ��ϵͳ����ʱ�Ĳ�����?<strong>?bootargs=“root=/dev/sda2”?</strong>?��ָ���˸��ļ�ϵͳλ��/dev/sda2�豸�ϡ�
+/aliases
+�ڵ㣺����ڵ����ڶ����豸������?<strong>?serial0=“uart@fe001000”?</strong>?��Ϊuart@fe001000�豸������һ������serial0��������ϵͳ�����á�</p>
+</blockquote>
+<p>�豸��������Ӳ�������ݽṹ��
+���轫�豸��ÿ��ϸ�ڶ�Ӳ���뵽����ϵͳ�У�����������ʱͨ��DTB������ʽ�����ݽṹ��Ӳ���ĸ��������������Ȼ�󴫵ݸ�����ϵͳ�Ӷ���ǿ����ϵͳ������ԡ�
+�豸���� OpenFirmware��OpenPOWER ����� (OPAL)��Power Architecture
+Platform Requirements (PAPR) �Զ����� Flattened Device Tree (FDT)
+��ʽʹ�á�</p>
+<p>�����ϣ���Щ���Զ�̬̽�⵽���豸�ǲ���Ҫ�����ģ�����USB device����������SOC�ϵ�usb
+host controller�������޷���̬ʶ��ģ���Ҫ��device
+tree��������ͬ���ĵ�������computer system�У�PCI
+device���Ա���̬̽�⵽������Ҫ��device tree������������PCI
+bridge������ܱ�̽�⣬��ô����Ҫ����?<a
+target="_blank" rel="noopener" href="https://os2024lab.readthedocs.io/zh-cn/latest/lab3/index.html#id3">1</a>��</p>
+<p>�ܶ�ϵͳ������OS������������Ȼ�����������罫.dtb�ļ����н�����ת���ɿɶ���.dts��ʽ��</p>
+<p>��ʾ�����ڱ�ϵ��ʵ����ʱû��ʹ��bootloader������ͨ��QEMU���ں�ֱ�Ӽ��ص��ڴ棬���Բ�������豸����kernel���ݲ�����</p>
+<h2 id="section-1">�������</h2>
+<p>����?<a
+target="_blank" rel="noopener" href="https://github.com/devicetree-org/devicetree-specification/releases/download/v0.4-rc1/devicetree-specification-v0.4-rc1.pdf">�豸���淶</a>?ѡ������Ϥ�����Ա�д�������virt.dtb�ļ���</p>
+<h3 id="豸ؼ">�豸�������ؼ���</h3>
+<ol type="1">
+<li><p>?<strong>?�ڵ���������?</strong>?<br />
+�ڵ����Ƹ�ʽΪ<code>label:node-name@unit-address</code>������<code>uart0: serial@101f0000</code>������<code>unit-address</code>��ʾ�Ĵ�������ַ��</p></li>
+<li><p>?<strong>?����ֵ����?</strong>?</p>
+<ul>
+<li>?<strong>?�ַ���?</strong>?����<code>compatible = "arm,cortex-a7"</code>��</li>
+<li>?<strong>?��������?</strong>?����<code>reg = &lt;0x1000 0x2000&gt;</code>���谴����ֽ��������</li>
+<li>?<strong>?����������?</strong>?����<code>local-mac-address = [00 11 22 33 44 55]</code></li>
+</ul></li>
+<li><p>?<strong>?�ڴ����Ҫ��?</strong>?<br />
+�豸���淶Ҫ�����ݰ�4�ֽڶ��룬����ͨ��<code>(*offset + 3) &amp; ~3</code>ʵ���Զ�����</p></li>
+</ol>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs plaintext">#include &lt;stdio.h&gt;<br>#include &lt;stdlib.h&gt;<br>#include &lt;stdint.h&gt;<br>#include &lt;string.h&gt;<br>#include &lt;endian.h&gt;<br>#include &lt;ctype.h&gt;<br></code></pre></td></tr></table></figure>
+<p>�豸��ͷ���ṹ�� <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><code class="hljs plaintext">struct fdt_header &#123;<br>    uint32_t magic;              // ħ����0xd00dfeed������ʶDTB�ļ��Ϸ���<br>    uint32_t totalsize;          // DTB�ļ��ܴ�С<br>    uint32_t off_dt_struct;      // �ṹ�����DTB�е�ƫ��<br>    uint32_t off_dt_strings;     // �ַ�������DTB�е�ƫ��<br>    uint32_t off_mem_rsvmap;     // �ڴ汣��ӳ���ƫ�ƣ�δ�ڴ�����ʹ�ã�<br>    uint32_t version;            // �豸���汾<br>    uint32_t last_comp_version;  // �����ݰ汾<br>    uint32_t boot_cpuid_phys;    // ����CPU������ID<br>    uint32_t size_dt_strings;    // �ַ������ܴ�С<br>    uint32_t size_dt_struct;     // �ṹ����ܴ�С<br>&#125;;<br></code></pre></td></tr></table></figure></p>
+<p>������ӡ <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs plaintext">static void print_indent(int depth) &#123;<br>    for(int i = 0; i &lt; depth; i++) &#123;<br>        printf(&quot;\t&quot;);  // ÿ��ڵ�����һ���Ʊ���<br>    &#125;<br>&#125;<br></code></pre></td></tr></table></figure></p>
+<p>�ַ����Ϸ��Լ��?? <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><code class="hljs plaintext">static int is_printable_string(const char *data, int len) &#123;<br>    for(int i = 0; i &lt; len; i++) &#123;<br>        if(data[i] == 0 &amp;&amp; i == len-1) continue;  // ����ĩβ�Ŀ��ַ�<br>        if(!isprint(data[i]) &amp;&amp; !isspace(data[i])) return 0;  // �ǿɴ�ӡ�ַ���Ƿ�<br>    &#125;<br>    return 1;<br>&#125;<br></code></pre></td></tr></table></figure></p>
+<p>����ֵ��ʽ����� <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><code class="hljs plaintext">static void print_property_value(const char *data, int len, const char *prop_name) &#123;<br>    // ����Ƿ�Ϊ�ַ���<br>    if(is_printable_string(data, len)) &#123;<br>        printf(&quot;\&quot;%s\&quot;&quot;, data);  // �ַ���������˫���Ű���<br>        return;<br>    &#125;<br>    // ����Ƿ�Ϊ32λ�������飨cells��<br>    if(len % 4 == 0) &#123;<br>        printf(&quot;&lt;&quot;);<br>        for(int i = 0; i &lt; len; i += 4) &#123;<br>            uint32_t value = be32toh(*(uint32_t *)(data + i));  // ���ת�����ֽ���<br>            printf(&quot;0x%02x&quot;, value);  // ��ʮ��������ʾ<br>        &#125;<br>        printf(&quot;&gt;&quot;);<br>        return;<br>    &#125;<br>    // ����������ֽ��������<br>    printf(&quot;[&quot;);<br>    for(int i = 0; i &lt; len; i++) &#123;<br>        printf(&quot;%02x&quot;, (unsigned char)data[i]);<br>    &#125;<br>    printf(&quot;]&quot;);<br>&#125;?<br></code></pre></td></tr></table></figure></p>
+<p>�����ڵ����Ʋ������������ַ���� <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><code class="hljs plaintext">static void parse_node(const char *dtb, uint32_t *offset, int depth) &#123;<br>    print_indent(depth);<br>    char node_name[256];<br>    strcpy(node_name, dtb + *offset);  // ��ȡ�ڵ�����<br>    printf(&quot;%s &#123;\n&quot;, node_name);<br>    *offset += strlen(node_name) + 1;  // �ƶ������ƽ���λ��<br>    *offset = (*offset + 3) &amp; ~3;      // ���뵽4�ֽڱ߽磨�豸���淶Ҫ��<br>&#125;<br></code></pre></td></tr></table></figure></p>
+<p>��ȡ��������ֵ��������ַ���룬�����ֵ�� <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><code class="hljs plaintext">static void parse_prop(const char *dtb, const char *strings, uint32_t *offset, int depth) &#123;<br>    uint32_t len = be32toh(*(uint32_t *)(dtb + *offset));  // ����ֵ����<br>    uint32_t nameoff = be32toh(*(uint32_t *)(dtb + *offset + 4));  // ���������ַ������е�ƫ��<br>    const char *name = strings + nameoff;  // ��ȡ������<br>    const char *data = dtb + *offset + 8;  // ����ֵ���ݵ�ַ<br>    <br>    print_indent(depth);<br>    printf(&quot;%s = &quot;, name);<br>    print_property_value(data, len, name);  // ����ֵ��������<br>    printf(&quot;;\n&quot;);<br>    <br>    *offset += 8 + ((len + 3) &amp; ~3);  // �ƶ�����һ�����ԣ�8�ֽ�ͷ�� + ���ݳ��ȶ��룩<br>&#125;<br></code></pre></td></tr></table></figure></p>
+<p>������ <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br></pre></td><td class="code"><pre><code class="hljs plaintext">// ��������ڣ����������в���<br>int main(int argc, char *argv[]) &#123;<br>    // �����������Ƿ���ȷ�������� + 1��dtb�ļ�·����<br>    if(argc != 2) &#123;<br>        // ��������ʱ��ӡʹ��˵��<br>        printf(&quot;Usage: %s &lt;dtb file&gt;\n&quot;, argv[0]);<br>        return 1; // ���ش�����<br>    &#125;<br><br>    // �����Զ����ƶ�ģʽ��ָ����dtb�ļ�<br>    FILE *f = fopen(argv[1], &quot;rb&quot;);<br>    if(!f) &#123; // �ļ���ʧ�ܴ���<br>        perror(&quot;Failed to open DTB file&quot;); // ���ϵͳ������Ϣ<br>        return 1;<br>    &#125;<br><br>    // ��ȡ�ļ���С���ƶ��ļ�ָ�뵽ĩβ<br>    fseek(f, 0, SEEK_END);<br>    // ��ȡ��ǰλ�ã����ļ���С��<br>    long size = ftell(f);<br>    // �����ļ�ָ�뵽��ʼλ��<br>    fseek(f, 0, SEEK_SET);<br><br>    // �����ڴ����ڴ洢����dtb�ļ�����<br>    char *dtb = malloc(size);<br>    if(!dtb) &#123; // �ڴ����ʧ�ܴ���<br>        perror(&quot;Failed to allocate memory&quot;);<br>        fclose(f); // �ر��ļ����<br>        return 1;<br>    &#125;<br><br>    // ���ļ����ݶ�ȡ��������ڴ���<br>    if(fread(dtb, 1, size, f) != size) &#123; // ��ȡʧ�ܴ���<br>        perror(&quot;Failed to read DTB file&quot;);<br>        free(dtb); // �ͷ��ѷ����ڴ�<br>        fclose(f); // �ر��ļ����<br>        return 1;<br>    &#125;<br>    fclose(f); // �ɹ���ȡ��ر��ļ�<br><br>    // ����dtbͷ����Ϣ�����ڴ���ʼ��ַǿ��ת��Ϊͷ���ṹ��ָ��<br>    struct fdt_header *header = (struct fdt_header *)dtb;<br>    // ��֤ħ�������ת�����ֽ��򣩣�����Ƿ�����Ч��dtb�ļ�<br>    if(be32toh(header-&gt;magic) != FDT_MAGIC) &#123;<br>        printf(&quot;Invalid DTB magic number\n&quot;); // ħ����ƥ��ʱ����<br>        free(dtb); // �ͷ��ڴ�<br>        return 1;<br>    &#125;<br><br>    // ��ȡ�豸���ṹ���ַ�������ƫ���������ת�����ֽ���<br>    uint32_t struct_offset = be32toh(header-&gt;off_dt_struct);<br>    // �ַ������洢λ�ã�dtb��ʼ��ַ + �ַ�����ƫ��<br>    const char *strings = dtb + be32toh(header-&gt;off_dt_strings);<br>    // ��ʼ����ǰ����λ��Ϊ�ṹ����ʼƫ��<br>    uint32_t offset = struct_offset;<br>    // ��ʼ��Ƕ����ȼ�����<br>    int depth = 0;<br><br>    // ������ѭ�������������ṹ������<br>    while(offset &lt; (struct_offset + be32toh(header-&gt;size_dt_struct))) &#123; // ѭ��ֱ���ṹ�����<br>        // ��ȡ��ǰtoken�����ת�����ֽ��򣩣�ÿ�ζ�ȡ4�ֽ�<br>        uint32_t token = be32toh(*(uint32_t *)(dtb + offset));<br>        offset += 4; // �ƶ�����һ��tokenλ��<br><br>        // ����token���ͽ��з�֧����<br>        switch(token) &#123;<br>            case FDT_BEGIN_NODE: // �ڵ㿪ʼ���<br>                parse_node(dtb, &amp;offset, depth); // �����ڵ���Ϣ<br>                depth++; // Ƕ���������<br>                break;<br><br>            case FDT_END_NODE: // �ڵ�������<br>                depth--; // Ƕ����ȼ���<br>                print_indent(depth); // ��ӡ����<br>                printf(&quot;&#125;;\n&quot;); // ����ڵ��������<br>                break;<br><br>            case FDT_PROP: // ���Զ���<br>                parse_prop(dtb, strings, &amp;offset, depth); // ������������<br>                break;<br><br>            case FDT_NOP: // �ղ����������ֶΣ�<br>                break;<br><br>            case FDT_END: // �ṹ��������<br>                goto done; // ��ת����������<br><br>            default: // δ֪token����<br>                printf(&quot;Unknown token: %x\n&quot;, token);<br>                goto done; // �쳣�˳�����<br>        &#125;<br>    &#125;<br><br>done: // ������ɻ��쳣�˳���ǩ<br>    free(dtb); // �ͷŷ�����ڴ�<br>    return 0; // ���سɹ�״̬��<br>&#125;<br></code></pre></td></tr></table></figure></p>
+<p>���빦�ܸ���������һ��DTB���豸�������ƣ��ļ�����������Ҫ������¹����� 1.
+��������в�����Ч�� 2. ��ȡָ��DTB�ļ��Ķ��������ݵ��ڴ� 3. ��֤�ļ���ʽ��Ч�ԣ�ħ��У�飩
+4. �����豸���ṹ�� - �����ڵ㿪ʼ/������� - ���������ֶ� - ά��Ƕ�ײ㼶�ṹ -
+�����ʽ�����豸���ṹ 5. ���������Ĵ��������ƣ�ȷ���ڴ氲ȫ�ʹ���״̬��ʾ</p>
+<h2 id="section-2">�������</h2>
+<p><img src="3.1.png" /></p>
+<h2 id="ĵ">�ĵ�</h2>
+<p>�ܵ���˵������Ӳ���豸�����Լ���淶������ϸ�ڣ����˸��������ʶ��</p>
+
+      </div>
+    </div>
+    
+      <script src='https://unpkg.com/mermaid@latest/dist/mermaid.min.js'></script>
+      <script>
+        if (window.mermaid) {
+          mermaid.initialize({"startOnload":true});
+        }
+      </script>
+    
+  </article>
+  <div class="post__foot">
+    
+    <div class="post-nav">
+  
+    <div class="post-nav-item-left"></div>
+  
+  <div class="vhr"></div>
+  
+    <a class="post-nav-item-right" href="/2025/05/15/%E4%B8%80%E6%AC%A1%E9%80%9A%E8%AF%9D%EF%BC%8C%E5%92%8C%E5%A6%88%E5%A6%88/">
+      <div class="text-align">
+        <span class="text-small">下一篇</span>
+        <svg t="1670570876164"
+             class="icon"
+             viewBox="0 0 1024 1024"
+             transform="scale(-1,-1)"
+             width="16"
+             height="16">
+          <path d="M384 512L731.733333 202.666667c17.066667-14.933333 19.2-42.666667 4.266667-59.733334-14.933333-17.066667-42.666667-19.2-59.733333-4.266666l-384 341.333333c-10.666667 8.533333-14.933333 19.2-14.933334 32s4.266667 23.466667 14.933334 32l384 341.333333c8.533333 6.4 19.2 10.666667 27.733333 10.666667 12.8 0 23.466667-4.266667 32-14.933333 14.933333-17.066667 14.933333-44.8-4.266667-59.733334L384 512z" p-id="14596" />
+        </svg>
+      </div>
+      一次通话，和妈妈
+    </a>
+  
+</div>
+
+    
+      <div class="related-post">
+  <div class="related__head">
+  <a href="/tags/%EF%BF%BD%CE%B3%EF%BF%BD/" class="post-tag">#�γ�</a>
+
+</div>
+  <div class="realated__body">
+    
+      
+    
+  </div>
+</div>
+
+    
+    
+  </div>
+
+    </div>
+    <div class="foot">
+  <div class="foot-inner">
+    <div class="foot__head">
+      
+        <div class="foot-line">
+          <div class="matts">山</div><div class="matts">水</div><div class="matts">一</div><div class="matts">程</div>
+        </div>
+      
+        <div class="foot-line">
+          <div class="matts">不</div><div class="matts">负</div><div class="matts">相</div><div class="matts">遇</div>
+        </div>
+      
+    </div>
+    <div class="foot__body">
+      
+        <div class="foot-item">
+          <div class="foot-item__head">朋友</div>
+          <div class="foot-item__body">
+            
+            
+
+
+  
+  
+    <div class="foot-link-group">
+      
+        
+        
+          <div class="text">
+            <img alt="link"
+                 height="20px"
+                 width="20px"
+                 src="/images/icon/icon-link.svg" />
+            <a class="foot-link" href=""></a>
+          </div>
+        
+      
+        
+        
+          <div class="text">
+            <img alt="link"
+                 height="20px"
+                 width="20px"
+                 src="/images/icon/icon-link+.svg" />
+            <a class="foot-link" href="mailto:2384464884@qq.com?subject=申请https://1yecheng.github.io的友链">申请友链</a>
+          </div>
+        
+      
+        
+        
+      
+        
+        
+      
+    </div>
+  
+
+
+          </div>
+        </div>
+      
+      
+        <div class="foot-item">
+          <div class="foot-item__head">账号</div>
+          <div class="foot-item__body">
+            
+
+
+  
+  
+    <div class="foot-link-group">
+      
+        
+        
+          <div class="text">
+            <img alt="link"
+                 height="20px"
+                 width="20px"
+                 src="/images/logo-github.svg" />
+            <a class="foot-link" target="_blank" rel="noopener" href="https://github.com/1YeCheng">1yecheng</a>
+          </div>
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+    </div>
+  
+
+
+          </div>
+        </div>
+      
+      <div class="foot-item">
+        <div class="foot-item__head">联系</div>
+        <div class="foot-item__body">
+          
+
+
+  
+  
+    <div class="foot-link-group">
+      
+        
+        
+          <div class="text">
+            <img alt="link"
+                 height="20px"
+                 width="20px"
+                 src="/images/icon/icon-email.svg" />
+            <a class="foot-link" href="mailto:name@example.com">2384464884@qq.com</a>
+          </div>
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+    </div>
+  
+
+
+        </div>
+      </div>
+    </div>
+    <div class="copyright">
+      <a href="https://1yecheng.github.io">爱你</a> &nbsp;|&nbsp;由&nbsp;<a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>&nbsp;及&nbsp;
+      <svg width="20" height="20" viewBox="0 0 725 725">
+        <path fill-rule="evenodd" fill="rgb(221, 221, 221)" d="M145.870,236.632 L396.955,103.578 L431.292,419.44 L156.600,522.53 L145.870,236.632 Z" />
+        <path fill-rule="evenodd" fill="rgb(159, 159, 159)" d="M396.955,103.578 L564.345,234.486 L611.558,513.469 L431.292,419.44 L396.955,103.578 Z" />
+        <path fill-rule="evenodd" fill="rgb(0, 0, 0)" d="M431.292,419.44 L611.558,513.469 L358.327,595.18 L156.600,522.53 L431.292,419.44 Z" />
+      </svg>
+      <a target="_blank" rel="noopener" href="https://github.com/hooozen/hexo-theme-tranquility">致远</a>&nbsp;驱动
+    </div>
+  </div>
+</div>
+
+    
+      <script src="https://unpkg.com/js-polyfills@0.1.43/es6.js"></script>
+      <script id="MathJax-script"
+              async
+              src="https://www.unpkg.com/mathjax@3.2.2/es5/tex-mml-chtml.js"></script>
+    
+    
+      <script src="/js/search.js"></script>
+      <script>searchInitialize("/search.json")</script>
+    
+    <script src="/js/copy-code.js"></script>
+    
+  
+
+  <!-- hexo injector body_end start --><script src="/assets/mmedia/mmedia-loader.js"></script><!-- hexo injector body_end end --></body>
+</html>
